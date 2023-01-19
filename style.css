@@ -80,15 +80,78 @@ button {
     font-family: 'Inter', sans-serif;
     background-color: hsl(5, 85%, 63%);
     border: none;
-    width: 10rem;
+    width: 11rem;
     color: white;
-    padding: 0.5rem;
+    padding: 0.75rem;
     text-transform: uppercase;
     letter-spacing: 0.2rem;
     font-weight: 400;
     font-size: 0.9rem;
+    transition: all 0.5s;
+}
+button:hover {
+    background-color: hsl(240, 100%, 5%);
+    cursor: pointer;
 }
 
 .right-side {
-    margin-top: 2.5rem;
+    margin: 2.5rem 1.5rem 0;
+    background-color: hsl(240, 100%, 5%);
+    padding: 2rem 1.5rem;
+}
+.right-side > section {
+    margin: 1.5rem 0 0;
+    border-bottom: 1px solid hsla(0, 0%, 100%, 0.5);
+}
+.right-side h2 {
+    color: hsl(35, 77%, 62%);
+    font-size: 1.85rem;
+    font-weight: 700;
+    /* margin-bottom: 1.5rem; */
+}
+.right-side h3 {
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+.right-side p {
+    line-height: 1.5;
+    font-size: 0.9rem;
+    color: white;
+    opacity: 0.7;
+    margin-bottom: 1.5rem;
+}
+.right-side > section:nth-of-type(3){
+    border-bottom: none;
+}
+/* .last-para {margin-bottom: 0;} */
+
+.bottom-page {
+    margin: 4rem 1.5rem 2.5rem;
+}
+.bottom-page > div {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+.bottom-page img {
+    width: 6rem;
+}
+.bottom-page h4 {
+    color: hsl(233, 8%, 79%);
+    font-weight: 700;
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+.bottom-page h5 {
+    font-size: 1.1rem;
+    font-weight: 800;
+    margin-bottom: 0.5rem;
+    color: hsl(240, 100%, 5%);
+}
+.bottom-page p {
+    line-height: 1.5;
+    font-size: 0.9rem;
 }
