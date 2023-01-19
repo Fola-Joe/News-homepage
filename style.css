@@ -43,23 +43,17 @@ body {
     background-color: hsl(36, 100%, 99%);
     min-height: 100vh;
 }
-.wrapper, main {
+.wrapper, main, .web-img {
     width: 100%;
 }
-.web-img{
-    width: 100%;
-}
-nav {
+/* .main-nav {position: relative;} */
+.nav-img {
     display: flex;
     align-items: center;
     justify-content: space-between;
     margin: 2rem 1.5rem;
 }
 
-/* to treat later */
-#nav-list {
-    display: none;
-}
 
 
 .left-side {
@@ -154,4 +148,24 @@ button:hover {
 .bottom-page p {
     line-height: 1.5;
     font-size: 0.9rem;
+}
+
+@media screen and (max-width: 425px){
+    #side-menu {
+        height: 100%; /* 100% Full-height */
+        width: 0; /* 0 width - change this with JavaScript */
+        position: fixed; /* Stay in place */
+        z-index: 1; /* Stay on top */
+        top: 0; /* Stay at the top */
+        right: 10rem;
+        background-color: hsl(36, 100%, 99%);
+        /* overflow-x: hidden; Disable horizontal scroll */
+        padding-top: 10rem; /* Place content 60px from the top */
+        transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+    }
+    #side-menu #close-btn {
+        position: absolute;
+        top: 2.3rem;
+        right: -8.25rem;
+      }
 }
