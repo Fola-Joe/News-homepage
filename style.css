@@ -152,20 +152,33 @@ button:hover {
 
 @media screen and (max-width: 425px){
     #side-menu {
-        height: 100%; /* 100% Full-height */
+        height: 100%;
         width: 0; /* 0 width - change this with JavaScript */
-        position: fixed; /* Stay in place */
-        z-index: 1; /* Stay on top */
-        top: 0; /* Stay at the top */
-        right: 10rem;
-        background-color: hsl(36, 100%, 99%);
-        /* overflow-x: hidden; Disable horizontal scroll */
-        padding-top: 10rem; /* Place content 60px from the top */
-        transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+        position: fixed;
+        z-index: 1;
+        top: 0; 
+        right: 0;
+        background-color: white; 
+        overflow-x: hidden; /* Disable horizontal scroll */
+        padding-top: 2rem; 
+        transition: 0.5s; 
     }
-    #side-menu #close-btn {
+    #nav-list {
         position: absolute;
-        top: 2.3rem;
-        right: -8.25rem;
+        top: 10rem;
+    }
+    #nav-list li {
+        margin-bottom: 2rem;
+        margin-left: 1.5rem;
+        transition: all 0.5s;
+    }
+    li:hover {
+        cursor: pointer;
+        color: hsl(5, 85%, 63%);
+    }
+    #close-btn {
+        position: absolute;
+        top: 2.2rem;
+        right: 2rem;
       }
 }

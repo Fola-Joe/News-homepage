@@ -1,12 +1,10 @@
 const menuBtn = document.querySelector('#menu-btn');
-const navList = document.querySelector('#nav-list');
 const sideMenu = document.querySelector('#side-menu');
+const closeBtn = document.querySelector('#close-btn');
 
-function openNav() {
-    sideMenu.style.width = "250px";
-  }
-  
-  /* Set the width of the side navigation to 0 */
-  function closeNav() {
-    sideMenu.style.width = "0";
-  }
+menuBtn.addEventListener('click', function () {
+  sideMenu.style.width = "16rem";
+})
+closeBtn.addEventListener('click', function () {
+  sideMenu.style.width = "0";
+})
