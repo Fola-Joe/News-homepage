@@ -98,13 +98,17 @@ button:hover {
     color: hsl(35, 77%, 62%);
     font-size: 1.85rem;
     font-weight: 700;
-    /* margin-bottom: 1.5rem; */
 }
 .right-side h3 {
     color: white;
     font-size: 1.2rem;
     font-weight: 700;
     margin-bottom: 1rem;
+    transition: all 0.5s;
+}
+.right-side h3:hover {
+    cursor: pointer;
+    color: hsl(35, 77%, 62%);
 }
 .right-side p {
     line-height: 1.5;
@@ -126,9 +130,7 @@ button:hover {
     gap: 1rem;
     margin-bottom: 2rem;
 }
-.bottom-page img {
-    width: 6rem;
-}
+.bottom-page img {width: 6rem;}
 .bottom-page h4 {
     color: hsl(233, 8%, 79%);
     font-weight: 700;
@@ -141,6 +143,11 @@ button:hover {
     margin-bottom: 0.5rem;
     color: hsl(240, 100%, 5%);
     line-height: 1.5;
+    transition: all 0.5s;
+}
+.bottom-page h5:hover {
+    cursor: pointer;
+    color: hsl(5, 85%, 63%);
 }
 .bottom-page p {
     line-height: 1.5;
@@ -225,6 +232,7 @@ button:hover {
 @media screen and (min-width: 921px) and (max-width: 1440px) {
     .desktop-menu {gap: 2rem;}
     li {font-size: 1.1rem;}
+    .desktop-menu {margin-right: 0;}
     .main-nav {
         margin: 3rem 5rem;
     }
@@ -254,7 +262,9 @@ button:hover {
         font-weight: 900;
         margin: 0 2rem 0 0;
     }
-    .read-more p {
-        font-size: 1.05rem;
+    .read-more p {font-size: 1rem;}
+    .right-side h2 {
+        font-size: 3rem;
+        margin-bottom: 2rem;
     }
 }
