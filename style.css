@@ -43,22 +43,19 @@ body {
     background-color: hsl(36, 100%, 99%);
     min-height: 100vh;
 }
-.wrapper, main, .web-img {
-    width: 100%;
-}
-/* .main-nav {position: relative;} */
+.wrapper, main, .web-img {width: 100%;}
 .nav-img {
     display: flex;
     align-items: center;
     justify-content: space-between;
     margin: 2rem 1.5rem;
 }
-
-
-
-.left-side {
-    margin: 0 1.5rem;
+li {transition: all 0.5s;}
+li:hover {
+    cursor: pointer;
+    color: hsl(5, 85%, 63%);
 }
+.left-side {margin: 0 1.5rem;}
 h1 {
     margin: 1rem 2.5rem 1rem 0;
     font-size: 2.1rem;
@@ -119,7 +116,6 @@ button:hover {
 .right-side > section:nth-of-type(3){
     border-bottom: none;
 }
-/* .last-para {margin-bottom: 0;} */
 
 .bottom-page {
     margin: 4rem 1.5rem 2.5rem;
@@ -144,13 +140,14 @@ button:hover {
     font-weight: 800;
     margin-bottom: 0.5rem;
     color: hsl(240, 100%, 5%);
+    line-height: 1.5;
 }
 .bottom-page p {
     line-height: 1.5;
     font-size: 0.9rem;
 }
 
-@media screen and (max-width: 425px){
+@media screen and (max-width: 540px){
     #side-menu {
         height: 100%;
         width: 0; /* 0 width - change this with JavaScript */
@@ -181,4 +178,83 @@ button:hover {
         top: 2.2rem;
         right: 2rem;
       }
+    .desktop-menu {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 541px) {
+    #side-menu, #menu-btn {display: none;}
+    .main-nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .desktop-menu {
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+        margin-right: 1.5rem;
+    }
+}
+
+@media screen and (min-width: 630px) and (max-width: 920px) {
+    li {font-size: 1.1rem;}
+    h1 {font-size: 2.2rem; margin-top: 2rem;}
+    .read-more p {font-size: 1.05rem;}
+    .bottom-page h5 {font-size: 1.2rem;}
+    .bottom-page p {font-size: 1.05rem;}
+    .nav-img {
+        margin-left: 3rem;
+    }
+    .desktop-menu {
+        margin-right: 3rem;
+    }
+    .main-nav {margin-top: 1rem; margin-bottom: 1rem;}
+    .left-side {margin: 0 3rem;}
+    .right-side {
+        margin-right: 3rem;
+        margin-left: 3rem;
+    }
+    .bottom-page {
+        margin-left: 3rem;
+        margin-right: 3rem;
+    }
+}
+
+@media screen and (min-width: 921px) and (max-width: 1440px) {
+    .desktop-menu {gap: 2rem;}
+    li {font-size: 1.1rem;}
+    .main-nav {
+        margin: 3rem 5rem;
+    }
+    .container-body {
+        display: grid;
+        grid-template-columns: 2.2fr 0.9fr;
+        gap: 1rem;
+        margin: 0 5rem;
+    }
+    .right-side {margin: 0;}
+    .bottom-page {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 5rem;
+        margin-left: 6rem;
+        margin-right: 6rem;
+    }
+    .left-side-bottom {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2.5rem;
+        margin-top: 2rem;
+    }
+    h1 {
+        font-size: 3.5rem;
+        line-height: 1;
+        font-weight: 900;
+        margin: 0 2rem 0 0;
+    }
+    .read-more p {
+        font-size: 1.05rem;
+    }
 }
