@@ -229,7 +229,7 @@ button:hover {
     }
 }
 
-@media screen and (min-width: 921px) and (max-width: 1440px) {
+@media screen and (min-width: 921px) {
     .desktop-menu {gap: 2rem;}
     li {font-size: 1.1rem;}
     .desktop-menu {margin-right: 0;}
@@ -267,4 +267,14 @@ button:hover {
         font-size: 3rem;
         margin-bottom: 2rem;
     }
+}
+
+
+@media screen and (min-width: 921px) and (max-width: 1279px) {
+    .desktop-menu {gap: 1.5rem;}
+    h1 {font-size: 3rem;}
+    .right-side h2 {font-size: 2rem;}
+    .right-side h3 {font-size: 0.9rem;}
+    .right-side p {font-size: 0.75rem;}
+    .bottom-page {gap: 1.5rem;}
 }
